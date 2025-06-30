@@ -4,12 +4,20 @@
     {
       "src": "api/shorten.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "api/trim.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/api/shorten",
       "dest": "api/shorten.js"
+    },
+    {
+      "src": "/api/trim",
+      "dest": "api/trim.js"
     }
   ]
 }
