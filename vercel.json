@@ -1,15 +1,21 @@
 {
   "version": 2,
-  "builds": [{
+  "builds": [
+    {
       "src": "api/shorten.js",
       "use": "@vercel/node"
     },
     {
       "src": "api/trim.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "api/chatme.js",
+      "use": "@vercel/node"
     }
   ],
-  "routes": [{
+  "routes": [
+    {
       "src": "/api/shorten",
       "dest": "api/shorten.js"
     },
