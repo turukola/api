@@ -12,6 +12,10 @@
     {
       "src": "api/chatme.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "api/ixsk.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -26,6 +30,10 @@
     {
       "src": "/api/chatme",
       "dest": "api/chatme.js"
+    },
+    {
+      "src": "/api/ixsk",
+      "dest": "api/ixsk.js"
     }
   ]
 }
